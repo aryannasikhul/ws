@@ -74,7 +74,7 @@ if ($generateXML) {
 
 // 5. membaca file XML
 // membuka file
-$url    = "http://localhost/ws.git/xml/bab-4/mahasiswa.xml";
+$url    = "localhost/ws/xml/bab-4/mahasiswa.xml";
 $client = curl_init($url);
 curl_setopt($client, CURLOPT_RETURNTRANSFER, 1);
 $response = curl_exec($client);
@@ -102,14 +102,3 @@ foreach ($datamahasiswaxml->mahasiswa as $mahasiswa) {
   </tr>";
 }
 echo "</table>";
-
-
-
-
-
-
-
-
-
-
-
